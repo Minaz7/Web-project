@@ -150,14 +150,19 @@ nav a.active {
   color: var(--cream);
   line-height: 1.15;
   margin-bottom: 20px;
+
 }
+
 .hero h1 .accent-text {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 6000;
   color: #e6b17e;
 }
-
+.hero-content {
+  max-width: 90vw;
+  width: 100%;
+}
 .btn-primary {
   display: inline-block;
   padding: 14px 36px;

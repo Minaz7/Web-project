@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Bean Coffee</title>
+  <title>Mr. Beans Coffee</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header>
   <div class="logo">
-    <img src="images/logo.jpg" alt="Mr. Bean Coffee" class="logo-img">
-    <p>Mr. Bean Coffee</p>
+    <img src="images/logo.jpg" alt="Mr. Beans Coffee" class="logo-img">
+    <span>Mr. Beans Coffee</span>
   </div>
   <nav>
     <a href="index.html" class="active">Home</a>
     <a href="shop.html">Shop</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <div class="cart-icon">🛒 <p class="cart-count">0</p></div>
+  <div class="cart-icon" id="cart-icon">🛒 <span class="cart-count">0</span></div>
 </header>
 
 <main>
-  <section class="banner">
-    <div class="banner-overlay"></div>
-    <div class="banner-content">
-      <p class="banner-label">Fresh Roast</p>
-      <h1>
-        The <p class="accent-text">warmth</p> of morning,<br>
-        the <p class="accent-text">depth</p> of <p class="accent-text">slow roast</p>
-      </h1>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-label">Fresh Roast</span>
+    <h1>
+  The <span class="accent-text">warmth</span> of morning,<br>
+  the <span class="accent-text">depth</span> of <span class="accent-text">slow roast</span>
+</h1>
       <a href="shop.html" class="btn-primary">Shop the Collection →</a>
     </div>
   </section>
@@ -38,10 +38,10 @@
     <div class="container">
       <div class="story-grid">
         <div class="story-text">
-          <p class="story-tag">The House of Mr. Bean</p>
+          <span class="story-tag">The House of Mr. Beans</span>
           <h2>Quiet contrast,<br>intentionally crafted</h2>
-          <p>Mr. Bean Coffee explores single-origin beans through quiet contrast — where bright, fruity notes meet deep, chocolatey richness in compositions that feel balanced, memorable, and quietly satisfying. Each batch is small-roasted as a study in atmosphere — refined, tactile, and designed to linger with understated presence.</p>
-          <p>Rooted in a considered approach to sourcing, Mr. Bean Coffee values ethical partnerships, fresh roasting, and a slower, more intentional ritual of brewing. The house explores origins with restraint, allowing each cup to feel clean, contemporary, and quietly expressive.</p>
+          <p>Mr. Beans Coffee explores single-origin beans through quiet contrast — where bright, fruity notes meet deep, chocolatey richness in compositions that feel balanced, memorable, and quietly satisfying. Each batch is small-roasted as a study in atmosphere — refined, tactile, and designed to linger with understated presence.</p>
+          <p class="story-second">Rooted in a considered approach to sourcing, Mr. Bean Coffee values ethical partnerships, fresh roasting, and a slower, more intentional ritual of brewing. The house explores origins with restraint, allowing each cup to feel clean, contemporary, and quietly expressive.</p>
         </div>
         <div class="story-image">
           <img src="images/coffee.jpeg" alt="Slow pour coffee">
@@ -53,7 +53,7 @@
   <section class="featured">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">Our Selections</p>
+        <span class="section-label">Our Selections</span>
         <h2>Signature roasts</h2>
       </div>
       <div class="product-grid">
@@ -63,8 +63,8 @@
           </div>
           <h3>Arabica Beans</h3>
           <p>Smooth, sweet, caramel & stone fruit</p>
-          <p class="price">750 EGP</p>
-          <a href="shop.html" class="btn-outline">Shop now →</a>
+          <span class="price">750 EGP</span>
+          <button class="btn-outline">Shop now →</button>
         </div>
         <div class="product-card">
           <div class="product-image">
@@ -72,8 +72,8 @@
           </div>
           <h3>Ethiopian Yirgacheffe</h3>
           <p>Floral, jasmine, lemon zest</p>
-          <p class="price">950 EGP</p>
-          <a href="shop.html" class="btn-outline">Shop now →</a>
+          <span class="price">950 EGP</span>
+          <button class="btn-outline">Shop now →</button>
         </div>
         <div class="product-card">
           <div class="product-image">
@@ -81,8 +81,8 @@
           </div>
           <h3>Colombian Supremo</h3>
           <p>Rich, balanced, nutty undertones</p>
-          <p class="price">850 EGP</p>
-          <a href="shop.html" class="btn-outline">Shop now →</a>
+          <span class="price">850 EGP</span>
+          <button class="btn-outline">Shop now →</button>
         </div>
       </div>
     </div>
@@ -92,14 +92,21 @@
 <footer>
   <div class="footer-content">
     <div class="footer-brand">
-      <h3>Mr. Bean Coffee</h3>
-      <p>Single origin , Ethically sourced , Fresh roasted</p>
+      <h3>Mr. Beans Coffee</h3>
+      <p>Single origin · Ethically sourced · Fresh roasted</p>
     </div>
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
       <a href="contact.html">Contact</a>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Mr. Beans Coffee</strong> — All rights reserved.</p>
+  </div>
 </footer>
+
+<script src="js/validation.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>

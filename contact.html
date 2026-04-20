@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mr. Beans Coffee</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/validation.js"></script>
 </head>
 <body>
 
@@ -67,8 +66,8 @@
         <label for="message">Message</label>
         <textarea id="message" placeholder="Tell us what's on your mind…"></textarea>
       </div>
+      <p id="error" style="min-height: 20px; margin-bottom: 10px; font-weight: bold;"></p>      
       <button type="submit">Send Message</button>
-      <span id="error"></span>
     </form>
   </div>
 </div>
@@ -89,6 +88,6 @@
     <p>&copy; 2026 <strong>Mr. Beans Coffee</strong> — All rights reserved.</p>
   </div>
 </footer>
-
+<script src="validation.js"></script>
 </body>
 </html>

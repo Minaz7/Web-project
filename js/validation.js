@@ -1,13 +1,21 @@
 function handleSubmit(e) {
   e.preventDefault();
+  
+  // Get values
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
+  
+  
   const error = document.getElementById('error');
-
   if (!name || !email || !message) {
     error.style.color = '#c0392b';
     error.textContent = 'Please fill in all fields before sending.';
+    return;
+  }
+  const nameRegex = /^[a-zA-Z0-9\s]+$/;
+  if (!nameRegex.test(name)) {
+    showMessage('Name only contains letters and numbers.', true); 
     return;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -100,3 +108,4 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', checkVisibility);
   checkVisibility();
 });
+

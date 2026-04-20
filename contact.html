@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Mr. Bean Coffee</title>
+  <title>Mr. Beans Coffee</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/validation.js"></script>
 </head>
 <body>
 
 <header>
   <div class="logo">
     <img src="images/logo.jpg" alt="Mr. Bean Coffee" class="logo-img">
-    <p>Mr. Bean Coffee</p>
+    <span>Mr. Beans Coffee</span>
   </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="contact.html" class="active">Contact</a>
   </nav>
-  <div class="cart-icon">🛒 <p class="cart-count">0</p></div>
+  <div class="cart-icon" id="cart-icon">🛒 <span class="cart-count">0</span></div>
 </header>
 
 <div class="contact-layout">
@@ -30,7 +31,7 @@
       <div class="contact-detail-icon">📍</div>
       <div class="contact-detail-text">
         <strong>Address</strong>
-        <p>12 Roastery Lane, Cairo, Egypt</p>
+        <span>12 Roastery Lane, Cairo, Egypt</span>
       </div>
     </div>
 
@@ -38,7 +39,7 @@
       <div class="contact-detail-icon">📧</div>
       <div class="contact-detail-text">
         <strong>Email</strong>
-        <p>mrbeans@gmail.com</p>
+        <span>hello@roastandco.com</span>
       </div>
     </div>
 
@@ -46,7 +47,7 @@
       <div class="contact-detail-icon">🕐</div>
       <div class="contact-detail-text">
         <strong>Hours</strong>
-        <p>Mon - Fri, 9 am - 6 pm</p>
+        <span>Mon – Fri, 9 am – 6 pm</span>
       </div>
     </div>
   </div>
@@ -56,17 +57,18 @@
     <form id="contactForm">
       <div class="form-group">
         <label for="name">Your Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" placeholder="e.g. Layla Hassan" autocomplete="name">
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email">
+        <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
       </div>
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" placeholder="Tell us what's on your mind…"></textarea>
       </div>
       <button type="submit">Send Message</button>
+      <span id="error"></span>
     </form>
   </div>
 </div>
@@ -74,8 +76,8 @@
 <footer>
   <div class="footer-content">
     <div class="footer-brand">
-      <h3>Mr. Bean Coffee</h3>
-      <p>Single origin , Ethically sourced , Fresh roasted</p>
+      <h3>Mr. Beans Coffee</h3>
+      <p>Single origin · Ethically sourced · Fresh roasted</p>
     </div>
     <div class="footer-links">
       <a href="index.html">Home</a>
@@ -83,6 +85,10 @@
       <a href="contact.html">Contact</a>
     </div>
   </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Mr. Beans Coffee</strong> — All rights reserved.</p>
+  </div>
 </footer>
+
 </body>
 </html>

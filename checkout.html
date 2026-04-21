@@ -227,10 +227,7 @@
       } else {
         const username = emailParts[0];
         const domain = emailParts[1];
-        if (/\d/.test(username)) {
-          document.getElementById('email-error').textContent = 'Email username cannot contain numbers';
-          isValid = false;
-        } else if (!domain.match(/\.(com|net|org|edu\.eg)$/)) {
+         if (!domain.match(/\.(com|net|org|edu\.eg)$/)) {
           document.getElementById('email-error').textContent = 'Email must end with .com, .net, .org, or .edu.eg';
           isValid = false;
         }

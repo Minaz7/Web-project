@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login &mdash; Mr. Beans Coffee</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="/images/logo.jpg" alt="Mr. Beans Coffee" class="logo-img">
+    <span>Mr. Beans Coffee</span>
+  </div>
+  <nav>
+    <a href="/" data-i18n="home">Home</a>
+    <a href="/shop" data-i18n="shop">Shop</a>
+    <a href="/contact" data-i18n="contact">Contact</a>
+    <a href="/login" class="active" data-i18n="login">Login</a>
+  </nav>
+  <div class="cart-icon">&#128722; <span class="cart-count">0</span></div>
+</header>
+
+<main class="auth-page">
+  <section class="auth-card">
+    <h1 data-i18n="loginTitle">Login</h1>
+    <p data-i18n="loginSubtitle">Use your account to place orders. Admins can manage products.</p>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email" data-i18n="emailLabel">Email</label>
+        <input type="email" id="email" required placeholder="user@mrbeans.com">
+      </div>
+      <div class="form-group">
+        <label for="password" data-i18n="passwordLabel">Password</label>
+        <input type="password" id="password" required placeholder="Your password">
+      </div>
+      <button type="submit" class="place-order-btn" data-i18n="loginBtn">Login</button>
+    </form>
+    <p id="auth-message"></p>
+    <p class="switch-auth"><span data-i18n="noAccount">No account?</span> <a href="/signup" data-i18n="createOne">Create one</a></p>
+  </section>
+</main>
+
+<script src="/js/i18n.js"></script>
+<script src="/js/currency.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/cart.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>

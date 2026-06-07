@@ -1,0 +1,35 @@
+/* Admin-specific dropdown styling */
+#product-brewing,
+#product-roast {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d8c2ad;
+  border-radius: 0;
+  background-color: #f6efe7;
+  color: #3b1f14;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #3b1f14 50%),
+    linear-gradient(135deg, #3b1f14 50%, transparent 50%);
+  background-position:
+    calc(100% - 22px) center,
+    calc(100% - 16px) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+#product-brewing:hover,
+#product-roast:hover {
+  border-color: #8b5e3c;
+  background-color: #fff8f0;
+}
+
+#product-brewing:focus,
+#product-roast:focus {
+  border-color: #3b1f14;
+  box-shadow: 0 0 0 3px rgba(59, 31, 20, 0.12);
+}
